@@ -1,0 +1,177 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 243, 243); /* Light Gray */
+  color: #333; /* Dark Gray */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #ffa500; /* Orange */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 3em; /* Increase font size */
+  margin: 10px 0;
+  color: #fff; /* White */
+  font-weight: bold; /* Add bold font weight */
+  font-style: italic; /* Add italic font style */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White */
+  font-size: 1.2em;
+}
+
+/* Section styles */
+.section {
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Menu styles */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  flex: 0 0 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff; /* White */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  color: #333; /* Dark Gray */
+}
+
+.menu-item p {
+  color: #777; /* Light Gray */
+}
+
+/* Contact styles */
+.contact-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-options > div {
+  margin-right: 30px;
+}
+
+.contact-options h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact-options p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.contact-options a {
+  color: #007bff; /* Blue */
+  text-decoration: none;
+}
+
+.contact-options a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40; /* Dark Gray */
+  color: #fff; /* White */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  header {
+    padding: 10px 0; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  nav ul li {
+    margin-right: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .menu-item {
+    flex: 0 0 calc(50% - 40px); /* Adjust width for smaller screens */
+    margin: 10px;
+  }
+
+  .contact-options {
+    flex-direction: column; /* Arrange contact options vertically for smaller screens */
+  }
+
+  .contact-options > div {
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-bottom: 20px; /* Add bottom margin for smaller screens */
+  }
+}
